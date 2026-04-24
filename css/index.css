@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.top-bar {
+    display: flex;
+    font-size: 10px;
+    font-weight: 800;
+    background-color: aliceblue;
+    gap: 0.2rem;
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: sticky;
+   padding: 1rem;
+}
+
+.mobile-nav-links,
+.icons {
+    display: flex;
+    align-items: center;
+    
+}
+
+.desktop-nav-links {
+    display: none;
+}
+
+
