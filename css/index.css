@@ -4,6 +4,14 @@
     margin: 0;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .top-bar {
     display: flex;
     font-size: 10px;
@@ -12,25 +20,214 @@
     gap: 0.2rem;
     width: 100%;
     height: auto;
+    padding:0 0.5rem;
 }
 
 header {
+    margin-top: 0.5rem;
+    border-bottom: 1px solid black;
     display: flex;
-   justify-content: space-between;
-   align-items: center;
-   position: sticky;
-   padding: 1rem;
-}
-
-.mobile-nav-links,
-.icons {
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    
+    gap: 2rem;
+    padding: 0 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-
 .desktop-nav-links {
     display: none;
 }
+
+
+.mobile-nav-links {
+    display:none;
+    position: absolute;
+    gap: 0.5rem;
+    top: 100%;
+    right: 0;
+}
+
+.icons {
+    display: flex;
+    gap: 0.5rem;
+}
+.icons input {
+    display: none;
+}
+.side-bar {
+    display: none;
+}
+
+.hero {
+    margin-top: 20px;
+    padding: 0.5rem 0.5rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.hero-content div {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    height: 45rem;
+    width: auto;
+}
+.hero-content .discount {
+    height: 10rem;
+    width: auto;
+   white-space: nowrap;
+}
+.hero-content div h1 {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.hero-content div p {
+    font-size: 16px;
+   
+}
+.hero-content div a {
+    color: black;
+    background-color: bisque;
+    padding: 1rem 1rem;
+    align-self: flex-start;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.hero-content div a:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+ img {
+    height: 30rem;
+    width:100%;
+    max-width: 400px;
+}
+
+.best-seller {
+    margin-top: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem
+}
+
+.best-seller-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+ .best-seller-content div {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.best-seller-content div img {
+    padding: 1rem;
+   
+}
+.best-seller-content div span, a {
+  align-self: self-start;
+  padding: 0.5rem 0.5rem;
+}
+
+.best-seller-content div a {
+    padding: 1rem 1rem;
+    background-color: bisque;
+    border-radius: 10px;
+    margin-left: 1rem;
+    font-size: 20px;
+    color: black;
+}
+
+.best-seller-content div a:hover {
+    background-color: red;
+    cursor: pointer;
+}
+.feature {
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+}
+
+.feature div {
+    display: flex;
+    justify-content: space-between;
+}
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.feature-content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem 0.5rem;
+}
+
+.feature-content div .new {
+    background-color: brown;
+    align-self: flex-start;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    color: aliceblue;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.feature-content div .new:hover {
+    background-color: darkgrey;
+    color: black;
+}
+
+.feature-content div span {
+    font-size: 20px;
+    align-self: self-start;
+    padding: 0.5rem;
+   
+}
+.feature-content div a {
+    padding: 1rem 1rem;
+    background-color: bisque;
+    border-radius: 10px;
+    margin-left: 1rem;
+    font-size: 20px;
+    color: black;
+}
+.feature-content div a:hover {
+     background-color: red;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
 
 
