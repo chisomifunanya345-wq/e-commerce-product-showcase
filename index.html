@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="images/">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -21,16 +30,25 @@
     </article>
 
     <header>
-        <div class="logo">
-            NexaTech
-        </div>
+
         <nav>
+            <div>
+                <button>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <div class="logo">
+                NexaTech
+            </div>
             <ul class="mobile-nav-links">
                 <li><a href="index.html"> Home </a></li>
                 <li><a href="product.html">Product</a></li>
                 <li><a href="about.html"> About </a></li>
                 <li><a href="contact.hmtl">Contact</a></li>
             </ul>
+            <div class="icons">
+               <span><i class="fa-solid fa-cart-shopping"></i></span>
+           </div>
        </nav>
 
        <nav>
@@ -41,17 +59,11 @@
                 <li><a href="contact.hmtl">Contact</a></li>
             </ul>
         </nav>
-        <div class="icons">
+
+        <div class="search">
             <span><i class="fa-solid fa-magnifying-glass"></i></span>
-            <input type="text" placeholder="search">
-            <span><i class="fa-solid fa-cart-shopping"></i></span>
-            <span><i class="fa-regular fa-heart"></i></span>
-            <div>
-                <button>
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-        
+            <input type="text" placeholder="search for products...">
+
         </div>
     </header>
 
@@ -59,48 +71,19 @@
 
 
     <main>
-
-        <!-- aside bar -->
-         <aside class="side-bar">
-            <h2>Category</h2>
-            <ul>
-                <li><a href="#">Electronics</a></li>
-                <li><a href="#">Phone Accessories</a></li>
-                <li><a href="#">Computer Accessories</a></li>
-                <li><a href="#">Charging / Power</a></li>
-                <li><a href="#">Speakers</a></li>
-                <li><a href="#">Desk Setup</a></li>
-                <li><a href="#">Gaming</a></li>
-
-         </aside>
         <section class="hero">
             <article class="hero-content">
                <div>
-                    <h1>Big sale</h1>
+                    <h1>Summer sale</h1>
                     <p>
-                        wireless headphones with noise canceling
+                        Up to 50% 0ff on best Gadget
                     </p>
-                    <img src="images/headphone6.jpeg" 
-                    alt="">
-
-                   <a href="product.html">Headphones</a>
-
-                </div>
-
-              <div class="discount">
-                   <h2>get up to <span>20%</span> off headphones</h2>
-              </div>
-
-              <div>
-                    <h2>smart desktop stand</h2>
-                    <img src="images/smart desktop stand.jpeg"
-                    alt="desktop stand">
-
+                    <p>
+                        limited time offer 
+                    </p>
                     <a href="product.html">shop now</a>
-                    
                 </div>
-
-            </article>
+          </article>
         </section>
 
         <!-- Best seller section -->
@@ -108,39 +91,30 @@
             <h2> Best Sellers </h2>
             <article class="best-seller-content">
                 <div>
-                    <img src="images/smartearpod.jpeg" 
-                    alt="earphone">
-                    <span>Earphones</span>
-                    <span>price:<del>$100</del> $80</span>
-
-                    <a href="product.html"> view product</a>
+                    <img src="images/smart desktop stand.jpeg" 
+                    alt="desktopstand">
+                    <span>destop stand</span>
+                </div>
+                <div>
+                    <img src="images/speaker 5.jpeg"
+                    alt="speaker">
+                    <span>smart speaker</span>
                 </div>
                 <div>
                     <img src="images/headphone7.jpeg" 
-                    alt="headphone">
+                    alt="headphones">
                     <span>headphones</span>
-                    <span>price:<del>$200</del> $180</span>
-
-                    <a href="product.html"> view product</a>
                 </div>
                 <div>
-                    <img src="images/phone case.jpeg" 
-                    alt="phonecases">
-                    <span>phonecases</span>
-                    <span>price:<del>$50</del> $30</span>
-
-                    <a href="product.html"> view product</a>
-                </div>
-                <div>
-                    <img src="images/NexaTech speaker1.jpeg" 
+                    <img src="images/phoneaccessories.jpeg" 
                     alt="speaker">
-                    <span>Smartsparkers</span>
-                    <span>price:<del>$300</del> $280</span>
-
-                    <a href="product.html"> view product</a>
+                    <span>fast chargers</span>
                 </div>
-
             </article>
+
+            <div class="view">
+                <a href="product.html"> view products</a>
+            </div>
         </section>
         <!-- feature section -->
         <section class="feature">
@@ -149,100 +123,113 @@
                 </h2>
                 <a href="product.html"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
-           <article class="feature-content">
-              
-                <div>
-                    <span class="new">new arrival</span>
+
+           <article class="card-container"> 
+                <div class="card">
+                    
                     <img src="images/earpod2.jpeg"
                     alt="">
 
-                    <p> 
-                        get up to 20hrs of listening time with a single charge time
-                    </p>
-
-                    <span>
-                      Smart Earpod
-                    </span>
-                    <span>$70</span>
-                    
-                    <a href="product.html">view product</a>
-
+                    <div class="card-content">
+                        <span>
+                        Smart Earpod
+                        </span>
+                        <span>$70</span>
+                        
+                        <a href="product.html">view product</a>
+                   </div>
                 </div>
-                <div>
+
+                <div class="card">
                     <img src="images/phone case 2.jpeg"
                     alt="phone cases">
 
-                    <span>
-                     phone cases
-                    </span>
+                  <div class="card-content">
+                        <span>
+                        phone cases
+                        </span>
 
-                    <span>
-                        $30
-                    </span>
+                        <span>
+                            $30
+                        </span>
 
-                    <a href="product.html">view product</a>
-
+                        <a href="product.html">view product</a>
+                  </div>
                 </div>
-                <div>
+
+                <div class="card">
                     <img src="images/powerbank.jpeg"
                     alt="powerbank">
 
-                    <span>
-                      powerbank
-                    </span>
+                    <div class="card-content">
+                        <span>
+                        powerbank
+                        </span>
 
-                    <span>
-                        $120
-                    </span>
+                        <span>
+                            $120
+                        </span>
 
-                    <a href="product.html">view product</a>
-
+                        <a href="product.html">view product</a>
+                    </div>
                 </div>
-                <div>
+
+                <div class="card">
                     <img src="images/chargers.jpeg"
                     alt="">
+                    <div class="card-content">
+                        <span>
+                        chagers
+                        </span>
+                    
+                        <span>
+                            $50
+                        </span>
 
-                    <span>
-                      chagers
-                    </span>
-                  
-                     <span>
-                        $50
-                    </span>
-
-                    <a href="product.html">view product</a>
-
+                        <a href="product.html">view 
+                        product</a>
+                    </div>
                 </div>
-                <div>
+
+                <div class="card">
                     <img src="images/gamingpad.jpeg"
-                    alt="">
+                    alt="gamingpad">
 
-                    <span>
-                      smart game pad
-                    </span>
+                    <div class="card-content">
+                        <span>
+                        smart game pad
+                        </span>
 
-                     <span>
-                        $120
-                    </span>
+                        <span>
+                            $120
+                        </span>
 
-                    <a href="product.html">view product</a>
-
+                        <a href="product.html">view product</a>
+                    </div>
                 </div>
-                <div>
-                    <img src="images/headphones4.jpeg"
-                    alt="">
 
-                    <span>
-                      headphones
-                    </span>
+                <div class="card">
 
-                     <span>
+                    <img src="images/smartearpod.jpeg"
+                    alt="Earpod">
+
+                    <div class="card-content">
+                         <span> Earpod
+                        </span>
+
+                       <span>
                         $80
-                    </span>
+                        </span>
 
-                    <a href="product.html">view product</a>
+                        <a href="product.html">view 
+                        product</a>
+
+                    </div>
 
                 </div>
+
+                
+                
             </article>
         </section>
         <!-- category section -->
@@ -276,7 +263,7 @@
                 </div>
                 <div>
                     <img src="images/powerbank.jpeg" 
-                    alt="speakers">
+                    alt="powerbank">
                     <span>Powerbank</span>
                     <a href="product.html">Buy now</a>
                 </div>
