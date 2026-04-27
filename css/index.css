@@ -10,7 +10,19 @@ ul {
 
 a {
     text-decoration: none;
+    background-color: #FF6A00;
+    align-self: flex-start;
+    color: #EAEAEA;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s;
 }
+a:hover {
+    color: #FF6A00;
+    background-color: #EAEAEA;
+    cursor: pointer;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: #F5F5F7;
@@ -38,13 +50,17 @@ p {
 
 .top-bar {
     display: flex;
-    font-size: 10px;
-    font-weight: 800;
+    font-size: 12px;
+    font-weight: 400;
     gap: 0.2rem;
     width: 100%;
     max-width: 1200px;
     height: auto;
-    padding:0 0.5rem
+    padding:0 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    
+   
 }
 
 header nav {
@@ -96,19 +112,22 @@ header nav {
 /* hero section */
 .hero {
     margin: 1rem 1rem;
+    width:auto;
+    
 }
 .hero-content {
     background: linear-gradient(135deg, #0A0A0A, #1A1A1A);
     border-radius: 20px;
     padding: 1rem 1rem;
-    background-image: url(../images/headphone6.jpeg);
-    background-size: 40%;
+    background-image: url(../images/headphone6.jpeg); 
+     background-size: 40%;
     background-position:right center;
     background-repeat: no-repeat;
     box-shadow: 0 8px 25px rgba(255, 106, 0, 0.35);
     transition: all 0.3s;
-}
+    width: auto;
 
+}
 .hero-content:hover {
     transform: scale(1.05);
     cursor: pointer;
@@ -120,19 +139,6 @@ header nav {
     gap:1rem;
 }
 
-.hero div a {
-    background-color: #FF6A00;
-    align-self: flex-start;
-    color: #EAEAEA;
-    padding: 1rem 1rem;
-    border-radius: 20px;
-    transition: all 0.3s;
-}
-.hero div a:hover {
-    color: #FF6A00;
-    background-color: #EAEAEA;
-    cursor: pointer;
-}
 .hero h1 {
     color: #FF6A00;
     font-size: 16px;
@@ -183,54 +189,45 @@ header nav {
 
 /* feature section */
 .feature{
-    margin: 1rem 1rem;
+    margin: 1rem 0.5rem;
+
 }
 .feature div {
-
-    display: flex;
+   display: flex;
     justify-content: space-between;
-}
-.feature-content div .new {
-    display: flex;
-    white-space: nowrap;
-    padding: 1rem;
 }
 
 .card-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px;
-    gap: 4rem;
-   
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px 0.5rem;
+}
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover; 
 }
 .card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #EAEAEA;
-    width: 100%;
-    height: 100%;
-    /* border-radius: 20px; */
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
-   
+    box-shadow: 0 8px 25px rgba(255, 106, 0, 0.15); 
+    border: 1px solid aliceblue;
+    border-radius: 12px;
 }
+
 .card-content {
+    padding: 12px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-   
-}
-.card-content span {
-    padding: 0.1rem 0;
+    gap: 6px;
+    transition: all 0.3s;
+
+} 
+.card:hover {
+    transform: scale(1.05);
 }
 
-
-.card img {
-    height: 70%;
-    width:100%;
-    object-fit: cover;
-    display: block;
-}
 
 
 
