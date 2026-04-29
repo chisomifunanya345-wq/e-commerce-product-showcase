@@ -1,22 +1,22 @@
-/* 1. Reset & Base Styles */
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures padding doesn't break layout */
+    box-sizing: border-box; 
 }
 
 body {
-    background-color: #0b0e14; /* Dark futuristic theme */
+    background-color: #0b0e14; 
     color: #e0e0e0;
-    font-family: 'Roboto', sans-serif; /* Requirement: Body typography */
+    font-family: 'Roboto', sans-serif; 
     line-height: 1.6;
-    overflow-x: hidden; /* Prevents horizontal scrolling errors */
+    overflow-x: hidden;
+    
 }
 
-/* 2. Typography */
 h1, h2, h3 {
-    font-family: 'Poppins', sans-serif; /* Requirement: Heading typography */
-    color: #00f2ff; /* Your Cyan Brand Color */
+    font-family: 'Poppins', sans-serif; 
+    color: #ff6a00; 
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -27,7 +27,6 @@ h1, h2, h3 {
     padding: 40px 20px;
 }
 
-/* 3. Hero Section (The Background Image) */
 .about-hero {
     height: 50vh;
     display: flex; /* Requirement: Flexbox */
@@ -35,23 +34,17 @@ h1, h2, h3 {
     align-items: center;
     text-align: center;
     
-    /* FIX: The path '../' jumps out of CSS folder into IMAGES folder */
-    background: linear-gradient(rgba(11, 14, 20, 0.85), rgba(0, 0, 0, 0.6)), 
-                url('../Images/background\ .jpg'); 
-    
-    background-size: cover; /* Requirement: Optimize image display */
+    background-size: cover; 
     background-position: center;
-    border-bottom: 2px solid #00f2ff;
+    border-bottom: 2px solid #ff6a00;
 }
 
 .about-hero h1 {
     font-size: 3.5rem;
-    text-shadow: 0 0 15px rgba(0, 242, 255, 0.8); /* "High sharpness" glow */
 }
 
-/* 4. Team & Values Layout (Grid) */
 .team-grid, .values-grid {
-    display: grid; /* Requirement: CSS Grid */
+    display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
     gap: 25px;
     margin: 40px 0;
@@ -63,13 +56,15 @@ h1, h2, h3 {
     border-radius: 12px;
     border: 1px solid rgba(0, 242, 255, 0.2);
     text-align: center;
-    transition: all 0.3s ease; /* Foundation for hover effects */
+    transition: all 0.3s ease; 
+}
+.social-links a {
+    color: orange;
 }
 
-/* 5. Requirement: Hover Effects */
 .member:hover, .card:hover {
-    transform: translateY(-10px); /* Zoom/Lift effect */
-    border-color: #00f2ff;
+    transform: translateY(-10px); 
+    border-color: #ff6a00;
     box-shadow: 0 10px 30px rgba(0, 242, 255, 0.3);
 }
 
