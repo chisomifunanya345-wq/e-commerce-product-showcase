@@ -182,6 +182,7 @@ header nav {
 
 /* Page hero: Contact Us with a background image */
 .contact-hero {
+    margin: 1rem;
     height: 50vh;
     display: flex;
     justify-content: center;
@@ -419,3 +420,167 @@ details p {
     border-top: 1px solid #eee;
     line-height: 1.6;
 }
+
+@media (min-width:768px) {
+    /* header */
+    .mobile-nav-links {
+        display: none;
+    }
+    nav div button {
+        display: none;
+    }
+    nav .icons {
+        display: none;
+    }
+    nav .icons1 {
+        display: block;
+    }
+    .desktop-nav-links {
+        display:  flex;
+        gap: 2rem;
+    }
+
+    .desktop-nav-links a {
+        color: #EAEAEA;
+        background-color: #FF6A00;
+        padding: 0.5rem 0.5rem;
+        border-radius: 20px;
+    }
+    .desktop-nav-links a:hover {
+        color:#FF6A00;
+        background-color: #EAEAEA; 
+        padding: 0.5rem 0.5rem;
+        cursor: pointer;
+    }
+
+    header {
+        margin: 0.5rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        gap: 1rem;
+   }
+
+   header .search {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+   }
+   .icons1 {
+        padding: 0.5rem;
+        font-size: 20px;
+   }
+   .icons1:hover {
+    color: #FF6A00;
+   }
+   /* top bar */
+
+   .top-bar {
+    display: flex;
+    gap: 2rem;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    font-size: 12px;
+   }
+
+   /* footer section */
+     .footer {
+        height: 30rem;
+        width: auto;
+       
+    }
+    .footer-container {
+        margin: 0 0;
+        padding:0 0;
+        gap: 0.5rem;
+    }
+
+    .footer-col {
+        padding: 0 1rem;
+        margin: 0 0;
+  
+    }
+
+    .contact-hero {
+    margin: 4rem;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid #ff6a00;
+}
+}
+
+@media (min-width:1024px) {
+    /* header {
+        position: sticky;
+        top: 0;
+        z-index: 100opx;
+    } */
+    .top-bar {
+      padding: 0.5rem 2rem;
+    }
+
+     /* footer section */
+    .footer {
+        height: 30rem;
+        width: auto;
+       
+    }
+    .footer-container {
+        margin: 0 0;
+        padding: 0 0;
+        gap: 0.5rem;
+    }
+
+    .footer-col {
+        padding: 0 0;
+        margin: 0 0;
+    }
+    .footer-bottom {
+        margin: auto;
+        width: 100%;
+        max-width: 2000px;
+
+        
+        
+    }
+
+
+
+
+
+
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
