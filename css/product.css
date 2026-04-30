@@ -135,7 +135,6 @@ body {
 
 .product-container:hover{
     transform: scale(1.05);
-    transition: transform 0.3s ease;
     box-shadow: 5px 5px 5px rgba(255, 109, 4, 0.886);
 }
 
